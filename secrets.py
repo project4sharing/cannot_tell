@@ -23,6 +23,8 @@ class Secrets:
 
         # Initialize the client
         client = InfisicalSDKClient(host=self.base_url)
+        client.api.session.verify = False
+        #client.api.session.verify = r"C:\Users\user\xyz.crt"
 
         # Authenticate (example using Universal Auth)
         client.auth.universal_auth.login(
