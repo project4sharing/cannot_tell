@@ -1,2 +1,4 @@
 [CONFIG]
-ENV = "DEV"
+BASE_URL = "https://app.infisical.com"
+ENV = "dev"
+SECRET_NAME = "secret01"
